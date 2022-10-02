@@ -11,6 +11,7 @@ body{
 }
 
 
+
 p{
     color: white;
     padding: 0px;
@@ -54,7 +55,9 @@ li{
 
 .btn-cv{
   background-color: rgb(9, 240, 240);
-  border-radius: 12px;
+  border-radius: 30px;
+  padding: 5px;
+  
 }
 
 .color-letra-nav-cv{
@@ -101,8 +104,8 @@ h3{
   color: white;
 }
 
-.navbar{ 
-  box-shadow: #5800FF 0px 2px 10px;
+.linea-color{ 
+  box-shadow: #5800FF 0px 2px 4px 0px;
 }
 
 .txt-fondo-uno{
@@ -409,7 +412,13 @@ h3{
     font-family: 'Heebo', sans-serif;
   }
 
-  
+  .text {
+    background-color: rgb(9, 240, 240);
+    background-image: none;
+    color: black;
+    font-size: 12px !important;
+    padding: 7px 17px !important;
+  }
 }
 
 @media (max-width:480px){
@@ -472,7 +481,6 @@ h3{
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr; 
     gap: 0px 0px; 
-    margin-bottom: 50px;
     background-color: black;
   }
 .txt-quiensoy{
@@ -672,13 +680,12 @@ h3{
 /* SECCION PROYECTOS */
 #proyectos{
   padding: 15px;
-  background-image: none;
+  
   
 }
 
 .titulo-proyecto{
-  padding-top: 90px;
-  background-image: none;
+  
   font-size: 60px;
 }
 
@@ -813,15 +820,11 @@ a:hover{
   .text {
     background-color: rgb(9, 240, 240);
     background-image: none;
-    /* rgb(14, 196, 241); */
     color: black;
     font-size: 16px;
     padding: 10px 22px;
   }
 
-  .icono-proyectos{
-    background-image: url("imagenes/icons8-visible-64.png");  
-  }
 
   .borde-enlace{
     border-radius: 20px;
@@ -867,7 +870,47 @@ a:hover{
       margin-right: 30px;
     }
 
-  }
+
+
+.middle {
+  display: flex;
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text{
+  margin-left: 5px;
+  border-radius: 10px; 
+}
+
+.containers:hover .image {
+  opacity: 0.6;
+}
+
+.containers:hover .middle {
+  opacity: 1;  
+}
+
+.text {
+  background-color: rgb(9, 240, 240);
+  background-image: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px 22px;
+}
+
+.borde-enlace{
+  border-radius: 20px;
+  background-color:  black;
+}
+
+}
 
 
 
@@ -974,4 +1017,57 @@ a:hover{
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
+/* NAVBAR RESPONSIVE */
+
+@media (max-width:990px){  
+  li{
+    margin-right: 0px;
+    font-size: 18px;
+  }
+
+  nav{
+    display: none;
+  }
+  .nav-responsive{
+    display: block;
+    margin-top: -15px;
+  }
+  nav.responsive{
+    display: block;
+    /* position: sticky; */
+    right: 0;
+    width: 180px;
+    top: 68px;
+    margin-right: 25px;
+    
+  }
+  nav.responsive ul{
+    display: block !important;
+
+  }
+  nav.responsive ul li{
+    border-bottom: 1px solid white;
+    padding: 10px;
+  }
+
+  .icono-menu{
+    color: rgb(9, 240, 240);
+    margin-left: 87%;
+  }
+
+}
+.navbarr{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+
+
+.contenedor-menu{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 32px 0px 32px;
+
+}
 

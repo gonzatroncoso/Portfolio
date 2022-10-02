@@ -7,51 +7,62 @@
     <title>Portfolio</title>
     
     <link rel="stylesheet" href="imagehover.css-master/css/imagehover.css">    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+    
+    <script src="https://kit.fontawesome.com/e5e5058fb4.js" crossorigin="anonymous"></script>
+
     
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
     <header>
-         <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-              <a class="navbar-brand icono-gt" href="#"> 
-               &lt/Gonzalo&gt  
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse footer-" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link color-letra-nav hvr-underline-from-left" aria-current="page" href="#">Acerca de</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link color-letra-nav hvr-underline-from-left" href="#habilidades">Habilidades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link color-letra-nav hvr-underline-from-left" href="#proyectos">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link color-letra-nav hvr-underline-from-left" href="#contacto">Contacto</a>
-                  </li>     
-                  <li class="nav-item">
-                    <a class="nav-link color-letra-nav-cv  btn-cv" href="#contacto">Descargar CV</a>
-                  </li>              
+        <div class="contenedor-menu">
+
+            <a class="navbar-brand icono-gt" href="#" > 
+                &lt/Gonzalo&gt  
+            </a> 
+            <nav id="nav">
+            
+
+                <ul class="navbarr">
+                    <li>
+                        <a class=" color-letra-nav hvr-underline-from-left" aria-current="page" href="#acercade" onclick="seleccionar()">
+                            Acerca de 
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" color-letra-nav hvr-underline-from-left" href="#habilidades" onclick="seleccionar()">Habilidades</a>
+                    </li>
+                    <li>
+                        <a class=" color-letra-nav hvr-underline-from-left" href="#proyectos" onclick="seleccionar()"> Proyectos</a>
+                    </li>
+                    <li>
+                        <a class=" color-letra-nav hvr-underline-from-left" href="#contacto" onclick="seleccionar()">Contacto</a>
+                    </li>     
+                    <li>
+                        <a class="color-letra-nav-cv btn-cv" href="cv/cv-GonzaloTroncoso.pdf"  download="CV-GonzaloTroncoso-Esp.pdf">Descargar CV</a>
+                    </li>              
                 </ul>
-              </div>
-            </div>
-          </nav>
+                
+            </nav>
+        </div>    
+    
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars icono-menu" ></i>
+        </div>
+
     </header>
+    
     
 <section>
 
     <div>
-        <img class="mi-foto" src="imagenes/perfil-linkedin.jpg" alt="">
+        <img class="mi-foto" src="imagenes/perfil-linkedin.jpg" alt="imagen de portada">
     </div>
 
     <div>
@@ -67,22 +78,18 @@
 </section>
 
 
-<section class="containerr containerrk">
-    <div class="mobile-qs">
+<section class="containerr">
+    <div id="acercade" class="mobile-qs">
         <h2 class="titulo-sobremi">Sobre mi</h2>
         <p class="txt-quiensoy">
-
-            ¡Hola! Mi nombre es Gonzalo, tengo 22 años y soy argentino. Soy desarrollador de software, apasionado por la tecnologia, y en constante crecimiento.
-            Mi introduccion al mundo del desarrollo fue de manera autodidacta, al gustarme tanto decidi empezar a certificarme mediante cursos, capacitaciones, facultad, etc. estoy buscando mi primer experiencia laboral en la cual me den la posibilidad de volcar todos los conocimientos aprendidos hasta el momento. <br>
-            Actualmente estoy cursando la Tecnicatura Superior en Desarrollo de Software (I.F.T.S 11). 
+            ¡Hola! Mi nombre es Gonzalo, tengo 22 años y soy argentino. Soy desarrollador de software, apasionado por la tecnología, y en constante crecimiento. Mi introducción al mundo del desarrollo fue de manera autodidacta, al gustarme tanto decidí empezar a certificarme mediante cursos, capacitaciones, facultad, etc. estoy buscando mi primera experiencia laboral en la cual me den la posibilidad de volcar todos los conocimientos aprendidos hasta el momento. <br>
+            Actualmente estoy cursando la Tecnicatura Superior en Desarrollo de Software (I.F.T.S 11). <br> <br>
+            Contacto: gonzalo.troncoso10@hotmail.com
         </p>
     </div>
     
     <div id="habilidades">
         <h2 class="titulo-habilidades">Habilidades</h2>
-        <!-- <p>
-            agregar react, bootstrap
-        </p>  -->
         <div class="icono-container">
             <p class="icono">
                 <img class="hvr-float-shadow" src="imagenes/icons8-html-5-70.png" alt="">
@@ -112,7 +119,12 @@
             <p class="icono">
                 <img class="hvr-float-shadow" src="imagenes/icons8-git-70.png" alt="">
                 Git
-            </p>          
+            </p>    
+            
+            <p class="icono">
+                <img class="hvr-float-shadow" src="imagenes/icons8-bootstrap-logo-70.png" alt="">
+                bootstrap
+            </p> 
         </div>
     </div>    
 </section>
@@ -126,12 +138,11 @@
             <h1 class="h1-proyecto">FULL GYM</h1>
 
             <p class="explicacion-proyecto"> 
-                Esta fue una de mis primeras paginas webs en mi primer curso. Es una web informativa sobre un gimnasio. 
-                Tiene 5 secciones en las cuales se ven imagenes, animaciones e información.
-
+                Esta fue una de mis primeras páginas webs en mi primer curso. Es una web informativa sobre un gimnasio.
+                Tiene 5 secciones en las cuales se ven imágenes, animaciones e información.
             </p>
 
-            <p> Tecnologias utilizadas: </p>
+            <p> Tecnologías utilizadas: </p>
             
             <div class="icono-containerProyecto">
                 <div class="iconoProyecto">
@@ -152,15 +163,17 @@
             
         </div>
         <div class="containers">
-            <img src="/imagenes/web-fullgym.png" alt="imagen web fullgym" class="image">
+            <img src="imagenes/web-fullgym.png" alt="imagen web fullgym" class="image">
             <div class="middle borde-enlace">
               <a class="borde-enlace"  href="https://gonzatroncoso.github.io/Fullgym/" target="_blank">
-                <div class="text">Demo</div>
+                <div class="text txt-boton">Demo</div>
               </a>  
               
               <a href="https://github.com/gonzatroncoso/Fullgym" target="_blank">
-                <div class="text">Repo</div>
+                <div class="text txt-boton">Repo</div>
              </a>
+
+
             </div>
            
           </div>
@@ -177,7 +190,7 @@
         </div>
 
         <div>
-            <a href="">
+            <a href="https://mail.google.com/mail/u/3/#inbox?compose=DmwnWrRpdtjqPwBMJBGcSpgbFjZVfccrkkFhdcxfQtmvKBMQTgDzqjWZlDHDTJntTHTQcLxNPbwG">
                 <img class="hvr-float-shadow" src="imagenes/icons8-gmail-48.png" alt="">
             </a>
             <a href="https://www.linkedin.com/in/gonzalo-troncoso-840b4a1b2/">
@@ -202,6 +215,7 @@
          2022 Gonzalo Troncoso - Todos los derechos reservados.
     </p>
 </footer>
+
 
 <script src="main.js"></script>
 
