@@ -14,8 +14,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
     
     <script src="https://kit.fontawesome.com/e5e5058fb4.js" crossorigin="anonymous"></script>
-
-    
     <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -27,8 +25,6 @@
                 &lt/Gonzalo&gt  
             </a> 
             <nav id="nav">
-            
-
                 <ul class="navbarr">
                     <li>
                         <a class=" color-letra-nav hvr-underline-from-left" aria-current="page" href="#acercade" onclick="seleccionar()">
@@ -55,22 +51,12 @@
         <div class="nav-responsive" onclick="mostrarOcultarMenu()">
             <i class="fa-solid fa-bars icono-menu" ></i>
         </div>
-
     </header>
-    
-    
 <section>
 
-    <div>
+    <div class="contenedor-img">
         <img class="mi-foto" src="imagenes/perfil-linkedin.jpg" alt="imagen de portada">
     </div>
-
-    <div>
-        <p class="txt-fondo-uno">Bienvenidos a </p>
-        <p class="txt-fondo-dos">mi Portafolio </p>
-    </div>
-
-
     <div class="centrar">     
         <h2 class="titulo-front">Mi nombre es <span class="nombre">Gonzalo Troncoso,</span> soy desarrollador FrontEnd</h2>
     </div>    
@@ -79,18 +65,26 @@
 
 
 <section class="containerr">
-    <div id="acercade" class="mobile-qs">
+    <div class="cont-sobre-mi">
         <h2 class="titulo-sobremi">Sobre mi</h2>
-        <p class="txt-quiensoy">
-            ¡Hola! Mi nombre es Gonzalo, tengo 22 años y soy argentino. Soy desarrollador de software, apasionado por la tecnología, y en constante crecimiento. Mi introducción al mundo del desarrollo fue de manera autodidacta, al gustarme tanto decidí empezar a certificarme mediante cursos, capacitaciones, facultad, etc. estoy buscando mi primera experiencia laboral en la cual me den la posibilidad de volcar todos los conocimientos aprendidos hasta el momento. <br>
-            Actualmente estoy cursando la Tecnicatura Superior en Desarrollo de Software (I.F.T.S 11). <br> <br>
-            Contacto: gonzalo.troncoso10@hotmail.com
-        </p>
+        <div class="cont-quiensoy">
+            <p class="txt-quiensoy">
+                ¡Hola! Mi nombre es Gonzalo, tengo 22 años y soy argentino. Soy desarrollador de software, apasionado por la tecnología, y en constante crecimiento. Mi introducción al mundo del desarrollo fue de manera autodidacta, al gustarme tanto decidí empezar a certificarme mediante cursos, capacitaciones, facultad, etc. estoy buscando mi primera experiencia laboral en la cual me den la posibilidad de volcar todos los conocimientos aprendidos hasta el momento.
+                Actualmente estoy cursando la Tecnicatura Superior en Desarrollo de Software (I.F.T.S 11).
+                <span class="email">
+                    Contacto: gonzalo.troncoso10@hotmail.com
+                </span>
+                
+            </p>
+        </div>
     </div>
     
-    <div id="habilidades">
+    <div id="habilidades" class="cont-habilidades">
         <h2 class="titulo-habilidades">Habilidades</h2>
-        <div class="icono-container">
+        <div class="icono-containers">
+            <div class="icono-container">
+
+            
             <p class="icono">
                 <img class="hvr-float-shadow" src="imagenes/icons8-html-5-70.png" alt="">
                 HTML5
@@ -125,6 +119,7 @@
                 <img class="hvr-float-shadow" src="imagenes/icons8-bootstrap-logo-70.png" alt="">
                 bootstrap
             </p> 
+        </div>
         </div>
     </div>    
 </section>
@@ -179,6 +174,57 @@
           </div>
     </div>
 
+    <div class="container-proyecto">
+        <div class="texto-proyecto">
+            <h1 class="h1-proyecto">ECOMMERCE SNEAKERS</h1>
+
+            <p class="explicacion-proyecto"> 
+                Esta fue una de mis primeras páginas webs en mi primer curso. Es una web informativa sobre un gimnasio.
+                Tiene 5 secciones en las cuales se ven imágenes, animaciones e información.
+            </p>
+
+            <p> Tecnologías utilizadas: </p>
+            
+            <div class="icono-containerProyecto">
+                <div class="iconoProyecto">
+                    <img class="hvr-float-shadow" src="imagenes/icons8-html-5-38.png" alt="icono-html">
+                    <p> HTML </p> 
+                </div>
+
+                <div class="iconoProyecto">
+                    <img class="hvr-float-shadow" src="imagenes/icons8-css3-38.png"   alt="icono-css3">
+                    <p> CSS </p> 
+                </div>
+
+                <div class="iconoProyecto">
+                    <img class="hvr-float-shadow" src="imagenes/icons8-sass-38.png"   alt="icono-sass">
+                    <p> SASS </p> 
+                </div>
+
+                <div class="iconoProyecto">
+                    <img class="hvr-float-shadow" src="imagenes/icons8-javascript-38.png"   alt="icono-sass">
+                    <p> JAVASCRIPT </p> 
+                </div>
+            </div>
+            
+        </div>
+        <div class="containers">
+            <img src="imagenes/web-fullgym.png" alt="imagen web fullgym" class="image">
+            <div class="middle borde-enlace">
+              <a class="borde-enlace"  href="https://gonzatroncoso.github.io/Fullgym/" target="_blank">
+                <div class="text txt-boton">Demo</div>
+              </a>  
+              
+              <a href="https://github.com/gonzatroncoso/Fullgym" target="_blank">
+                <div class="text txt-boton">Repo</div>
+             </a>
+
+
+            </div>
+           
+          </div>
+    </div>
+
     
 </section>
 
@@ -190,7 +236,7 @@
         </div>
 
         <div>
-            <a href="https://mail.google.com/mail/u/3/#inbox?compose=DmwnWrRpdtjqPwBMJBGcSpgbFjZVfccrkkFhdcxfQtmvKBMQTgDzqjWZlDHDTJntTHTQcLxNPbwG">
+            <a href="mailto:gonzalo.troncoso10@hotmail.com">
                 <img class="hvr-float-shadow" src="imagenes/icons8-gmail-48.png" alt="">
             </a>
             <a href="https://www.linkedin.com/in/gonzalo-troncoso-840b4a1b2/">
@@ -212,7 +258,7 @@
 
 <footer>
     <p class="footer">
-         2022 Gonzalo Troncoso - Todos los derechos reservados.
+        Hecho por Gonzalo Troncoso.
     </p>
 </footer>
 

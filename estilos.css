@@ -1,13 +1,14 @@
 * {
-    background-color: black;
-    margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-body{
-  background-color: black;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+}
+
+body{
+  background-color: black;
+  width: 100%;
 }
 
 
@@ -15,7 +16,6 @@ body{
 p{
     color: white;
     padding: 0px;
-    
 }
 
 span{
@@ -25,8 +25,6 @@ span{
 h1, h2, h3, h4, h5{
   font-family: 'Heebo', sans-serif;
 }
-
-
 
 /* NAVBAR */
 
@@ -56,7 +54,7 @@ li{
 .btn-cv{
   background-color: rgb(9, 240, 240);
   border-radius: 30px;
-  padding: 5px;
+  padding: 10px;
   
 }
 
@@ -69,26 +67,23 @@ li{
 
 
 /* Primera seccion. Mi nombre y foto */
-.titulo-h1 {
-  margin-top: 90px;
+.contenedor-img{
+display: flex;
+justify-content: center;
 }
 
 .mi-foto{
-  position: absolute;
-    margin-left: 40%;
     width: 300px;
-    margin-top: 10%;    
     height:300px;
     border-radius:150px;
     border:2px solid rgb(9, 240, 240)
 }
-
 .centrar{
     text-align: center;  
 }
 .titulo-front{
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 0px;
 }
 
@@ -108,7 +103,7 @@ h3{
   box-shadow: #5800FF 0px 2px 4px 0px;
 }
 
-.txt-fondo-uno{
+/* .txt-fondo-uno{
   font-size: 150px;
   margin-bottom: 165px;
   margin-left: 8%;
@@ -125,41 +120,15 @@ h3{
   font-weight: 900;
   color: #3c3c3c;
   font-family: 'Heebo', sans-serif;
-}
-
-@media (max-width:1445px){
-
-  .txt-fondo-uno{
-    font-size: 120px;
-    margin-bottom: 233px;
-    margin-left: 11%;
-    top: 108px;
-    font-weight: 600;
-    color: #3c3c3c;
-    font-family: 'Heebo', sans-serif;
-  }
-  .txt-fondo-dos{
-    font-size: 120px;
-    margin-bottom: 0px;
-    margin-left: 37%;
-    top: 108px;
-    font-weight: 600;
-    color: #3c3c3c;
-    font-family: 'Heebo', sans-serif;
-  }
-}
+} */
 
 
 @media (max-width:1130px){
-
   .mi-foto{
-    position: absolute;
-      margin-left: 40%;
-      width: 300px;
-      margin-top: 10%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
   }
 
   .txt-fondo-uno{
@@ -190,14 +159,11 @@ h3{
 @media (max-width:1030px){
 
   .mi-foto{
-    position: absolute;
-      margin-left: 40%;
-      width: 300px;
-      margin-top: 12%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
-  }
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
+}
 
   .txt-fondo-uno{
     font-size: 95px;
@@ -226,14 +192,11 @@ h3{
 @media (max-width:865px){
 
   .mi-foto{
-    position: absolute;
-      margin-left: 33%;
-      width: 300px;
-      margin-top: 12%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
-  }
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
+}
 
   .txt-fondo-uno{
     font-size: 85px;
@@ -256,21 +219,18 @@ h3{
 
   .titulo-sobremi{
     margin-top: 70px !important ;
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
 @media (max-width:760px){
 
   .mi-foto{
-    position: absolute;
-      margin-left: 30%;
-      width: 300px;
-      margin-top: 12%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
-  }
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
+}
 
   .txt-fondo-uno{
     font-size: 75px;
@@ -297,12 +257,12 @@ h3{
   }
 
   .icono-containerProyecto{
-    margin-left: 16%;
     margin-top: 8%;
-    width: 20%;
+    width: 100%;
     display: grid; 
-    grid-template-columns: 0.4fr 0.4fr !important; 
+    grid-template-columns: 0.4fr 0.4fr 0.4fr; 
     gap: 0px 0px; 
+
   }
 
 }
@@ -310,14 +270,11 @@ h3{
 @media (max-width:675px){
 
   .mi-foto{
-    position: absolute;
-      margin-left: 31%;
-      width: 300px;
-      margin-top: 11%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
-  }
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
+}
 
   .txt-fondo-uno{
     font-size: 60px;
@@ -347,14 +304,11 @@ h3{
 @media (max-width:630px){
 
   .mi-foto{
-    position: absolute;
-      margin-left: 25%;
-      width: 300px;
-      margin-top: 10%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
-  }
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
+}
 
   .txt-fondo-uno{
     font-size: 60px;
@@ -378,39 +332,24 @@ h3{
   .titulo-habilidades, .titulo-proyecto, .titulo-sobremi, .contactame {
     font-size: 30px !important;
   }
+
+  .icono-container{
+    display: grid; 
+    grid-template-columns: 0.4fr 0.4fr 0.4fr; 
+    grid-template-rows: 1fr 1fr ; 
+    gap: 0px 0px; 
+    column-gap: 40px !important;
+  }
 }
 
 
 @media (max-width:595px){
-
   .mi-foto{
-    position: absolute;
-      margin-left: 24%;
-      width: 300px;
-      margin-top: 12%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
-  }
-
-  .txt-fondo-uno{
-    font-size: 50px;
-    margin-bottom: 297px;
-    margin-left: 13%;
-    top: 108px;
-    font-weight: 400;
-    color: #3c3c3c;
-    font-family: 'Heebo', sans-serif;
-  }
-  .txt-fondo-dos{
-    font-size: 50px;
-    margin-bottom: 0px;
-    margin-left: 36%;
-    top: 108px;
-    font-weight: 400;
-    color: #3c3c3c;
-    font-family: 'Heebo', sans-serif;
-  }
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
+}
 
   .text {
     background-color: rgb(9, 240, 240);
@@ -419,107 +358,110 @@ h3{
     font-size: 12px !important;
     padding: 7px 17px !important;
   }
+  .icono-container{
+    display: grid; 
+    grid-template-columns: 0.4fr 0.4fr 0.4fr; 
+    grid-template-rows: 1fr 1fr ; 
+    gap: 0px 0px; 
+    column-gap: 20px !important;
+  }
 }
 
 @media (max-width:480px){
-
   .mi-foto{
-    position: absolute;
-      margin-left: 15%;
-      width: 300px;
-      margin-top: 14%;    
-      height:300px;
-      border-radius:150px;
-      border:2px solid rgb(9, 240, 240)
-  }
-
-  .txt-fondo-uno{
-    font-size: 40px;
-    margin-bottom: 297px;
-    margin-left: 13%;
-    top: 108px;
-    font-weight: 400;
-    color: #3c3c3c;
-    font-family: 'Heebo', sans-serif;
-  }
-  .txt-fondo-dos{
-    font-size: 40px;
-    margin-bottom: 0px;
-    margin-left: 25%;
-    top: 108px;
-    font-weight: 400;
-    color: #3c3c3c;
-    font-family: 'Heebo', sans-serif;
-  }
-
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border:2px solid rgb(9, 240, 240)
+}
   .icono-containerProyecto{
-    margin-left: 16%;
     margin-top: 8%;
-    width: 20%;
+    width: 60%;
     display: grid; 
-    grid-template-columns: 0.4fr !important; 
+    grid-template-columns: 0.4fr 0.4fr 0.4fr; 
     gap: 0px 0px; 
   }
+
+  .redes{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .icono-container{
+    display: grid; 
+    grid-template-columns: 0.4fr 0.4fr 0.4fr; 
+    grid-template-rows: 1fr 1fr ; 
+    gap: 0px 0px; 
+    column-gap: 15px !important;
+  }
+
 }
 
 /* SECCION QUIEN SOY Y HABILIDADES */
 
 .titulo-sobremi{
   margin-top: 160px;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .titulo-habilidades{ 
   margin-left: 17%; 
   margin-top: 160px; 
-  font-size: 60px;
+  font-size: 40px;
   
+}
+
+.email{
+  display: block;
 }
 
 .containerr {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    background-color: black;
+    display: flex;
   }
 .txt-quiensoy{
     font-family: "Open Sans",sans-serif;
-    margin-top: 40px;
-    margin-left: 150px;
-    line-height: 1.5;     
+    line-height: 2.5;
+    width: 80%;
 }
 
-#habilidades{
-  margin: 0 auto;
+.cont-sobre-mi{
+  width: 60%;
+  margin-right: 50px;
+
+}
+.cont-quiensoy{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.icono-containers{
+  display: flex;
+  justify-content: center;
 }
 
 .icono-container{
-    margin-left: 10%;
-    width: 20%;
-    margin-right: 100px;     
     display: grid; 
-    grid-template-columns: 0.4fr 0.4fr 0.4fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr ; 
     gap: 0px 0px; 
-  
+    column-gap: 60px;
 }
 
 .icono{
     display: flex;
-    margin-right: 95px;
-    margin-top: 35px;
+    /* margin-right: 75px; */
+    margin-top: 25px;
     flex-direction: column;
     text-align: center;
+
 }
 
 .nombre{
   font-weight: 700;
 }
 
-
 /* DISEÑO MOBILE */
-
 
 @media (max-width:960px){
 
@@ -528,38 +470,32 @@ h3{
      flex-direction: column;
   }
 
-  #habilidades{
-    margin-left: 13%;
-  }
-
   .icono-container{
-    margin-left: 19%;
-    width: 20%;
     display: grid; 
     grid-template-columns: 0.4fr 0.4fr 0.4fr; 
     grid-template-rows: 1fr 1fr ; 
-    gap: 0px 0px; 
+    gap: 0px 0px;
+    column-gap: 60px;
   }
-
+/* 
   .icono{
-    margin-right: 100px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+  } */
 
   .txt-quiensoy{
     font-family: "Open Sans",sans-serif;
-    margin-top: 40px;
-    margin-left: 16%;
-    line-height: 1.5;
-    margin-right: 16%;       
-  }
+    line-height: 2.5;
+    width: 80%;
+}
+.cont-sobre-mi{
+  width: 100%;
+  margin-right: 50px;
+
+}
 
   .titulo-habilidades{
-    margin-left: 31%;
+    margin-left: 40vw;
     margin-top: 60px;
+    
   }
 
   .titulo-sobremi{
@@ -587,6 +523,7 @@ h3{
     grid-template-columns: 0.4fr 0.4fr 0.4fr; 
     grid-template-rows: 1fr 1fr ; 
     gap: 0px 0px; 
+    column-gap: 60px;
   }
 
   .titulo-proyecto{
@@ -595,7 +532,7 @@ h3{
 }
 
 @media (max-width:640px){
-.icono{
+/* .icono{
   display: flex;
   margin-right: 50px;
   margin-top: 20px;
@@ -615,26 +552,24 @@ h3{
   margin-left: 31%;
   margin-top: 60px;
   font-size: 30px;
-}
+} */
 
 }
 
 @media (max-width:480px){
   .icono{
     display: flex;
-    margin-right: 20px;
-    margin-top: 15px;
+    /* margin-right: 20px;
+    margin-top: 15px; */
     flex-direction: column;
     text-align: center;
   }
 
   .txt-quiensoy{
     font-family: "Open Sans",sans-serif;
-    margin-top: 20px;
-    margin-left: 12%;
-    line-height: 1.5;
-    margin-right: 12%;       
-  }
+    line-height: 2.5;
+    width: 80%;
+}
 
   .titulo-habilidades{
     margin-left: 23% !important;
@@ -656,20 +591,17 @@ h3{
   }
 
   .icono-container{
-    margin-left: 10%;
-    width: 20%;
     display: grid; 
     grid-template-columns: 0.4fr 0.4fr 0.4fr; 
     grid-template-rows: 1fr 1fr ; 
     gap: 0px 0px; 
+    column-gap: 60px;
   }
 
   .titulo-habilidades{
-    margin-left: 26%;
+    margin-left: 38vw;
     margin-top: 60px;
   }
-  
-  
 }
 
 
@@ -685,8 +617,7 @@ h3{
 }
 
 .titulo-proyecto{
-  
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .container-proyecto{
@@ -735,7 +666,7 @@ a:hover{
 }
 
 .icono-containerProyecto{
-  margin-left: 16%;
+  margin-left: 0px;
   margin-top: 8%;
   width: 20%;
   display: grid; 
@@ -856,12 +787,12 @@ a:hover{
     }
 
     .icono-containerProyecto{
-      margin-left: 31% ;
       margin-top: 8%;
-      width: 20%;
+      width: 100%;
       display: grid; 
       grid-template-columns: 0.4fr 0.4fr 0.4fr; 
       gap: 0px 0px; 
+
     }
     
     
@@ -928,7 +859,6 @@ a:hover{
   justify-content: space-evenly;
 }
 .contactame{
-  
   font-size: 40px;
 }
 
@@ -1036,9 +966,9 @@ a:hover{
     display: block;
     /* position: sticky; */
     right: 0;
-    width: 180px;
     top: 68px;
-    margin-right: 25px;
+    /* width: 180px;
+    margin-right: 25px; */
     
   }
   nav.responsive ul{
