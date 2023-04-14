@@ -965,12 +965,9 @@ a:hover{
   }
   nav.responsive{
     display: block;
-    /* position: sticky; */
     right: 0;
     top: 68px;
-    /* width: 180px;
-    margin-right: 25px; */
-    
+
   }
   nav.responsive ul{
     display: block !important;
@@ -992,9 +989,6 @@ a:hover{
   flex-direction: row;
  
 }
-
-
-
 .contenedor-menu{
   display: flex;
   justify-content: space-between;
@@ -1002,3 +996,8 @@ a:hover{
 
 }
 
+@media (min-width:990px){
+  .icono-menu{
+    display: none;
+  }
+}
