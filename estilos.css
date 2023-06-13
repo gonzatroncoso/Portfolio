@@ -400,7 +400,6 @@ h3{
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 60px;
-    border: 2px solid red;
   }
 
   .texto-proyecto {
@@ -420,7 +419,7 @@ h3{
 .iconoProyecto {
   margin-left: 20px;
   margin-right: 30px;
-  max-width: 50px;
+  max-width: 0px;
 }
 
 }
