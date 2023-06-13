@@ -395,8 +395,35 @@ h3{
     column-gap: 15px !important;
   }
 
+  .explicacion-proyecto{
+    max-width: 210px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: 2px solid red;
+  }
+
+  .texto-proyecto {
+    background-image: none;
+    max-width: 280px;
 }
 
+.icono-containerProyecto {
+  margin-top: 8%;
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr 0.4fr;
+  gap: 0px 0px;
+  max-width: 280px;
+}
+
+.iconoProyecto {
+  margin-left: 20px;
+  margin-right: 30px;
+  max-width: 50px;
+}
+
+}
 /* SECCION QUIEN SOY Y HABILIDADES */
 
 .titulo-sobremi{
