@@ -450,12 +450,15 @@ h3{
 }
 
 .icono{
-    display: flex;
     /* margin-right: 75px; */
     margin-top: 25px;
     flex-direction: column;
     text-align: center;
+}
 
+.img-icono{
+  width: 60px;
+  gap: 0px 0px;
 }
 
 .nombre{

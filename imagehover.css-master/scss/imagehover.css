@@ -17,7 +17,6 @@
   background-color: red;
   color: #fff;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transform: translateZ(0);
@@ -387,8 +386,7 @@
 }
 [class^=imghvr-flip-] img,
 [class*=" imghvr-flip-"] img {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 [class^=imghvr-flip-] figcaption,
 [class*=" imghvr-flip-"] figcaption {
